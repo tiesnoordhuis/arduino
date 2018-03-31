@@ -5,17 +5,34 @@
   <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
   <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
   <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
-  <script language="javascript" type="text/javascript" src="p5.dom.js"></script>
+  <!--<script language="javascript" type="text/javascript" src="p5.dom.js"></script>-->
   <script language="javascript" type="text/javascript" src="p5.serialport.js"></script>
   <script language="javascript" type="text/javascript" src="boordcomputerP5Read.js"></script>
+</head>
+<body>
   <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
   <input id="inputDom" type="text">
   </input>
-  <!-- This line removes any default padding and style.
-       You might only need one of these values set. -->
-  <style> body {padding: 0; margin: 0;} </style>
-</head>
-
-<body>
+  <button onclick="mouseReleased()">
+    enter info to port
+  </button>
+  <div>
+    <div>current value</div>
+    <p id="display1">
+      initial value
+    </p>
+    <div>max value (100)</div>
+    <p id="display2">
+      initial value
+    </p>
+    <div>average value</div>
+    <p id="display3">
+      initial value
+    </p>
+    <div>average Max value</div>
+    <p id="display4">
+      initial value
+    </p>
+  </div>
 </body>
 </html>
